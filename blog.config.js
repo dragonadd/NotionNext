@@ -60,8 +60,8 @@ const BLOG = {
 
   // 文章列表相关设置
   CAN_COPY: process.env.NEXT_PUBLIC_CAN_COPY || true, // 是否允许复制页面内容 默认允许，如果设置为false、则全栈禁止复制内容。
-  POST_LIST_STYLE: 'page', // ['page','scroll'] 文章列表样式:页码分页、单页滚动加载
-  POST_LIST_PREVIEW: process.env.NEXT_PUBLIC_POST_PREVIEW || 'false', //  是否在列表加载文章预览
+  POST_LIST_STYLE: 'scroll', // ['page','scroll'] 文章列表样式:页码分页、单页滚动加载
+  POST_LIST_PREVIEW: process.env.NEXT_PUBLIC_POST_PREVIEW || 'true', //  是否在列表加载文章预览
   POSTS_PER_PAGE: 4, // post counts per page
   POSTS_SORT_BY: 'date', // 排序方式 'date'按时间,'notion'由notion控制
 
