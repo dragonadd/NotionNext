@@ -33,6 +33,7 @@ export async function getStaticProps(req) {
   const { locale } = req
   const from = 'index'
   const props = await fetchGlobalAllData({ from, locale })
+  const { postCount } = props
   if (process.env.NODE_ENV === 'development') {
     const configTheme = BLOG.THEME
     const notionTheme = props?.NOTION_CONFIG?.THEME || null
@@ -77,7 +78,9 @@ export async function getStaticProps(req) {
       siteConfig('POSTS_PER_PAGE', 12, props?.NOTION_CONFIG)
     )
   }
-
+  props.page = 1          // 首页固定为第一页
+  props.postCount = postCount
+  
   // 预览文章内容
   if (POST_LIST_PREVIEW) {
     const previewLimit = pLimit(
