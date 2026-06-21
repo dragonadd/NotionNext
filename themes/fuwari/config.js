@@ -98,7 +98,7 @@ const CONFIG = {
   /** 正面标题 */
   FUWARI_CONTACT_TITLE: '联系卡片',
   /** 正面说明文案 */
-  FUWARI_CONTACT_DESCRIPTION: '欢迎交流与反馈',
+  FUWARI_CONTACT_DESCRIPTION: '欢迎交流与反馈。但还没做好，等待完善',
   /** 正面右上角徽标 */
   FUWARI_CONTACT_FRONT_BADGE: 'Message',
   /** 跳转 URL（外链或站内路径） */
@@ -110,7 +110,7 @@ const CONFIG = {
   /** 背面标题 */
   FUWARI_CONTACT_BACK_TITLE: '为何联系?',
   /** 背面说明 */
-  FUWARI_CONTACT_BACK_DESCRIPTION: '可提交问题、建议与合作意向。但还没做好，等待补充', 
+  FUWARI_CONTACT_BACK_DESCRIPTION: '可提交问题、建议与合作意向。但还没做好，等待完善', 
   /** 背面行动文案 */
   FUWARI_CONTACT_BACK_TEXT: '点击',
 
