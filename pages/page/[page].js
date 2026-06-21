@@ -33,7 +33,7 @@ export async function getStaticPaths({ locale }) {
 export async function getStaticProps({ params: { page }, locale }) {
   const from = `page-${page}`
   const props = await fetchGlobalAllData({ from, locale })
-  const { allPages } = props
+  const { allPages, postCount } = props   // ← 改动①：解构 postCount
   const POST_PREVIEW_LINES = siteConfig(
     'POST_PREVIEW_LINES',
     12,
@@ -50,6 +50,7 @@ export async function getStaticProps({ params: { page }, locale }) {
     POSTS_PER_PAGE * page
   )
   props.page = page
+  props.postCount = postCount 
 
   // 处理预览
   if (siteConfig('POST_LIST_PREVIEW', false, props?.NOTION_CONFIG)) {
