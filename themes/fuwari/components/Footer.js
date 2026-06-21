@@ -17,8 +17,8 @@ const Footer = () => {
           {copyrightDate} {author}. All Rights Reserved.
         </p>
         <p className='mt-1'>
-          <span class="rose">玫瑰会有花期🌹</span>
-          <span class="love"> 爱你不分朝夕❤</span>
+          <span style={{ color: '#e74c3c' }}>玫瑰会有花期🌹</span>
+          <span style={{ color: '#ff6b81' }}> 爱你不分朝夕❤</span>
         </p>
           {/*
         <p className='mt-1'>
@@ -47,7 +47,3 @@ const Footer = () => {
 
 export default Footer
 
-<style>
-  .rose { color: #e74c3c; }
-  .love { color: #ff6b81; }
-</style>
